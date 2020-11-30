@@ -30,6 +30,14 @@ $(document).ready(
       }
     );
 
+    $('#invia').click(
+      function() {
+        console.log('CLICK');
+        $('input').val().toUpperCase();
+
+      }
+    )
+
     $('input').keypress (function(event) {
       if(event.which == 13 || event.keyCode == 13) {
         var nuovaSerie = $('input').val().toUpperCase();
@@ -42,10 +50,6 @@ $(document).ready(
         $('#serie-tv').append(html);
       }
     }
-
-
-
-
   )
   }
 );
