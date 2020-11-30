@@ -2,9 +2,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-size: 35px;
 }
 
 .delete {
   cursor: pointer;
   color: red;
+}
+
+body {
+  margin: 20px 40px;
 }
