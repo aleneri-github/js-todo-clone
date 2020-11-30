@@ -10,8 +10,7 @@ $(document).ready(
       "BREAKING BAD",
       "BAND OF BROTHERS",
       "STAR TREK",
-      "I SIMPSON",
-      "IL TRONO DI SPADE",      
+
     ];
 
     var source = $("#entry-template").html();
@@ -34,6 +33,7 @@ $(document).ready(
     $('input').keypress (function(event) {
       if(event.which == 13 || event.keyCode == 13) {
         var nuovaSerie = $('input').val().toUpperCase();
+         $("input"). val ("");
         console.log(nuovaSerie);
         var context = {
           text: nuovaSerie
