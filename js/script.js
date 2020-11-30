@@ -38,29 +38,17 @@ $(document).ready(
       if(event.which == 13 || event.keyCode == 13) {
         var nuovaSerie = $('input').val().toUpperCase();
         console.log(nuovaSerie);
+        var context = {
+          text: nuovaSerie
+        };
+        var html = template(context);
+        $('#serie-tv').append(html);
       }
-
     }
 
 
 
 
   )
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   }
 );
