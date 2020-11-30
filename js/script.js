@@ -30,10 +30,11 @@ $(document).ready(
       }
     );
 
+
+    // pulsante da collegare
     $('#invia').click(
       function() {
         console.log('CLICK');
-        $('input').val().toUpperCase();
 
       }
     )
