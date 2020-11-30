@@ -28,7 +28,7 @@ $(document).ready(
       $('#serie-tv').append(html);
     }
 
-    $('.delete').click(
+    $(document).on("click", ".delete",
       function() {
         $(this).parent().fadeOut(1000);
       }
