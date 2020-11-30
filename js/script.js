@@ -30,7 +30,7 @@ $(document).ready(
 
     $('.delete').click(
       function() {
-        $(this).parent().remove();
+        $(this).parent().fadeOut(1000);
       }
     );
 
