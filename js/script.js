@@ -21,16 +21,18 @@ $(document).ready(
     var template = Handlebars.compile(source);
 
     for (var i = 0; i < listaSerieTv.length; i++) {
-
       var context = {
         text: listaSerieTv[i]
-
       };
       var html = template(context);
       $('#serie-tv').append(html);
-
-
     }
+
+    $('.delete').click(
+      function() {
+        $(this).parent().remove();
+      }
+    );
 
 
 
