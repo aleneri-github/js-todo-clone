@@ -6,9 +6,15 @@
 $(document).ready(
   function() {
 
-const Handlebars = require("handlebars");
-const template = Handlebars.compile("Name: {{name}}");
-console.log(template({ name: "Nils" }));
+    // var source = document.getElementById("entry-template").innerHTML;
+    var source = $("#entry-template").html();
+    console.log(source);
+    var template = Handlebars.compile(source);
+
+    var context = {
+      title: "My New Post",
+      body: "This is my first post!" };
+    var html = template(context);
 
 
 
