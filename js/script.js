@@ -8,13 +8,18 @@ $(document).ready(
 
     // var source = document.getElementById("entry-template").innerHTML;
     var source = $("#entry-template").html();
-    console.log(source);
+    // console.log(source);
     var template = Handlebars.compile(source);
 
     var context = {
-      title: "My New Post",
-      body: "This is my first post!" };
+      title: "Regola dei terzi",
+      body: "La regola dei terzi è un accorgimento che è stato utilizzato per secoli dai pittori ed è tuttora molto diffuso nella composizione di una fotografia. Dividendo l'immagine in terzi e ponendo il soggetto in uno dei punti di intersezione delle linee immaginarie ottenute, si ritiene che l'immagine risulti più dinamica (rispetto ad una composizione che pone il soggetto al suo centro), ma armonica al tempo stesso. La regola è talmente popolare che alcune macchine fotografiche sono dotate di mirini con una griglia di suddivisione in terzi per aiutare il fotografo."
+     };
     var html = template(context);
+
+    // console.log(html);
+
+    $('#app').append(html);
 
 
 
