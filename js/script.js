@@ -11,10 +11,7 @@ $(document).ready(
       "BAND OF BROTHERS",
       "STAR TREK",
       "I SIMPSON",
-      "IL TRONO DI SPADE",
-      "WEST WING",
-      "THE WIRE",
-      "I SOPRANO"
+      "IL TRONO DI SPADE",      
     ];
 
     var source = $("#entry-template").html();
