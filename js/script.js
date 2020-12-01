@@ -35,6 +35,14 @@ $(document).ready(
     $('#invia').click(
       function() {
         console.log('CLICK');
+        var nuovaSerie = $('input').val().toUpperCase();
+         $("input"). val ("");
+        console.log(nuovaSerie);
+        var context = {
+          text: nuovaSerie
+        };
+        var html = template(context);
+        $('#serie-tv').append(html);
 
       }
     )
